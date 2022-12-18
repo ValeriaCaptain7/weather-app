@@ -24,6 +24,12 @@ h2 {
   list-style: none;
 }
 
+footer {
+  margin-top: 15px;
+  font-size: smaller;
+  text-align: center;
+}
+
 .weather-app {
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 15px;
