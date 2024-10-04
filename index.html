@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Weather App</title><meta name="description" content="Weather App built with HTML, CSS, JavaScript, and API">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,50 +30,86 @@
                         <input type="submit" value="Find city" class="btn-search w-100" />
                     </div>
                     <div class="col-sm-3">
-                        <button class="btn-current w-100" id="showPosition">
-                            Localize me
+                        <button class="btn-current w-100" id="current-location-button">
+                            Here
                         </button>
                     </div>
                 </div>
             </form>
-            <h1 id="city"></h1>
+            <h1 id="city">
+                Rome, Latium, Italy
+            </h1>
             <ul>
                 <li id="date"></li>
                 <li>
-                    <span id="description"></span>
+                    Partly Cloudy
                 </li>
             </ul>
 
             <div class="row">
                 <div class="col-6">
-                    <div class="d-flex weather-temperature">
-                        <img src="" alt="Clear" id="icon" class="float-left" />
+                    <div class="clearfix">
+                        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy icon"
+                            class="weather-icon float-left" />
                         <div class="float-left">
-                            <strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link"
-                                    class="active">°C</a> |
-                                <a href="#" id="fahrenheit-link">°F</a></span>
+                            <span class="temperature" id="temperature">19</span><span class="units">
+                                <a href="#" id="celsius-link">°C</a> |
+                                <a href="#" id="fahrenheit-link">°F</a>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="col-6">
                     <ul>
-                        <li>Visibility: <span id="visibility"></span> m</li>
-                        <li>Humidity: <span id="humidity"></span> %</li>
-                        <li>Wind: <span id="wind"></span> km/h</li>
+                        <li>Humidity:<span id="humidity">%</span></li>
+                        <li>Wind:<span id="wind">km/h</span></li>
                     </ul>
                 </div>
             </div>
             <hr />
-            <div class="weather-forecast" id="forecast">
-                <div class="row"></div>
-            </div>
-            <div>
-                <footer>
-                    <small>This project was coded by Valeria Panzetta and is open-sourced on 
-                        <a href="https://github.com/ValeriaCaptain7/App" target="_blank">GitHub</a> and hosted on 
-                        <a href="https://main--beamish-biscochitos-8eef19.netlify.app/" target="_blank">Netlify</a>.
-                    </small>
-                </footer>
+            <div class="container-text-center">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <h3>Tue<br /><i class="fa-solid fa-sun"></i></h3>
+                            <p>15°/24°</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <h3>
+                                Wed<br /><i class="fa-solid fa-cloud-showers-heavy"></i>
+                            </h3>
+                            <p>12°/ 20°</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <h3>
+                                Thu<br /><i class="fa-solid fa-cloud-showers-heavy"></i>
+                            </h3>
+                            <p>8°/ 14°</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <h3>Fri<br /><i class="fa-solid fa-cloud"></i></h3>
+                            <p>10°/ 12°</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <h3>Sat<br /><i class="fa-solid fa-cloud-sun"></i></h3>
+                            <p>10°/ 15°</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card">
+                            <h3>Sun<br /><i class="fa-solid fa-cloud-meatball"></i></h3>
+                            <p>-2°/ 0°</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
